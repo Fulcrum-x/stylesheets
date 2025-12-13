@@ -71,8 +71,8 @@
    ========================================================== */
 
 body {
-    background-color: #000
-        url('https://raw.githubusercontent.com/xzin-CoRK/stylesheets/refs/heads/main/aither-bg.svg');
+    background: #000000
+        url('https://fulcrum-x.github.io/stylesheets/tiling-test.svg');
     background-size: 512px auto;
 }
 
