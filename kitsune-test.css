@@ -1,0 +1,148 @@
+/* ==========================================================
+   Kitsune Theme for Aither (UNIT3D v9+)
+   OLED Black + Kitsune Pink Accent
+   ========================================================== */
+
+:root {
+    /* ---- Brand ---- */
+    --kitsune-pink: #F4AACA;
+    --kitsune-pink-soft: rgba(244, 170, 202, 0.6);
+    --kitsune-pink-dim: rgba(244, 170, 202, 0.35);
+
+    /* ---- Base ---- */
+    --body-bg: #000000;
+    --body-fg: #e6e6e6;
+
+    --text-color: #e6e6e6;
+    --breadcrumb-fg: #999;
+    --breadcrumb-active-fg: var(--kitsune-pink);
+
+    /* ---- Panels / Cards ---- */
+    --panel-bg: #121212;
+    --panel-head-bg: #0d0d0d;
+    --panel-fg: #e6e6e6;
+    --panel-border: none;
+    --panel-box-shadow: none;
+
+    --torrent-card-bg: #121212;
+    --torrent-group-bg: #0d0d0d;
+    --torrent-group-header-bg: #161616;
+
+    /* ---- Buttons ---- */
+    --button-filled-bg: var(--kitsune-pink);
+    --button-filled-fg: #000;
+    --button-filled-border-radius: 9999px;
+
+    --button-outlined-border: 1px solid var(--kitsune-pink-dim);
+    --button-outlined-fg: var(--kitsune-pink);
+
+    /* ---- Links ---- */
+    --color-links-colored: var(--kitsune-pink);
+    --color-links-hover: var(--kitsune-pink-soft);
+
+    /* ---- Tables ---- */
+    --data-table-th-bg: #0d0d0d;
+    --data-table-tr-even-bg: #101010;
+    --data-table-tr-odd-bg: #0b0b0b;
+    --data-table-tr-hover-bg: rgba(244,170,202,0.08);
+
+    /* ---- Top Nav ---- */
+    --top-nav-bg: #000000;
+    --top-nav-dropdown-menu-bg: #121212;
+    --top-nav-dropdown-hover-bg: rgba(244,170,202,0.08);
+    --top-nav-stats-fg: #aaa;
+
+    /* ---- Freeleech / Status Colors ---- */
+    --torrent-row-freeleech-fg: var(--kitsune-pink);
+    --torrent-row-double-upload-fg: var(--kitsune-pink-soft);
+    --torrent-row-featured-fg: var(--kitsune-pink-soft);
+
+    /* ---- Inputs ---- */
+    --input-text-border: 1px solid #333;
+    --input-text-border-hover: 1px solid var(--kitsune-pink-dim);
+    --input-text-border-active: 1px solid var(--kitsune-pink);
+
+    /* ---- Scrollbar ---- */
+    --scrollbar-color: rgba(244,170,202,0.25);
+}
+
+/* ==========================================================
+   GLOBAL POLISH
+   ========================================================== */
+
+body {
+    background-color: #000
+        url('https://raw.githubusercontent.com/xzin-CoRK/stylesheets/refs/heads/main/aither-bg.svg');
+    background-size: 512px auto;
+}
+
+/* Cards & panels feel flatter (OLED) */
+.panel,
+.torrent-card,
+.mediahub-card,
+.user-stat-card {
+    background: #121212 !important;
+    box-shadow: none !important;
+}
+
+/* Subtle hover lift */
+.panel:hover,
+.torrent-card:hover {
+    background: #161616 !important;
+}
+
+/* ==========================================================
+   LINKS & TAGS
+   ========================================================== */
+
+a {
+    color: var(--kitsune-pink);
+}
+
+a:hover {
+    color: var(--kitsune-pink-soft);
+}
+
+.torrent-tag:hover {
+    background: rgba(244,170,202,0.12);
+}
+
+/* ==========================================================
+   NAV / HEADER
+   ========================================================== */
+
+.top-nav {
+    border-bottom: 1px solid rgba(244,170,202,0.15);
+}
+
+.top-nav a:hover {
+    color: var(--kitsune-pink);
+}
+
+/* ==========================================================
+   CHATBOX (optional but clean)
+   ========================================================== */
+
+.chatbox-message__content {
+    background: #121212;
+    border-radius: 14px;
+}
+
+.chatbox-message__address {
+    color: #aaa;
+}
+
+/* ==========================================================
+   FORCE-HIDE AITHER FAVICON LOGO IMG
+   ========================================================== */
+
+/* Hide the inline favicon logo image */
+.top-nav img[src*="favicon"],
+.top-nav__brand img[src*="favicon"],
+.top-nav__logo img[src*="favicon"] {
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
